@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mybooks">
+        <h1 class="mybooks__title"> Moje książki </h1>
+        <form class="mybooks__form" id="mybooksForm">
+            <div class="mybooks__button-container">
+                <label><input type="text" class="mybooks__input" id="input">Wpisz szukaną frazę</label>
+                <button type="submit" class="mybooks__button" id="button">Szukaj</button>
+            </div>
+            <ul class="mybooks__slide-list" id="mybooksList">
+                <li> Tytuł, Autor, Link do książki </li>
+            </ul>            
+        </form>
+        <label>Wybierz kryterium przeszukiwania:
+            <select id="mybooksSelect">
+                <option value="title">Tytuł</option>
+                <option value="author">Autor</option>
+                <option value="website">Strona internetowa</option>
+            </select>
+        </label>
+    </div>
+    <div class="addbook">
+        <h1 class="addbook__title">Dodaj książkę</h1>
+        <form class="addbook__form" id="addBookForm">
+            <div class="addbook__button_container">
+                <label>Tytuł: <input type="text" class="addbook__input" id="addBookTitle"/></label>
+                <label>Autor: <input type="text" class="addbook__input" id="addBookAuthor"/></label>
+                <label>Strona: <input type="text" class="addbook__input" id="addBookWebsite"/></label>
+                <button type="submit" class="addbook__button" id="addBookButton">Dodaj</button>                
+            </div>
+        </form>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/books.js"></script>
+</body>
+</html>

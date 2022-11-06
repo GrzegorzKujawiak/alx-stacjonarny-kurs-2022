@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="chat">
+        <div class="chat__button-container">
+            <label>Szukaj w wiadomościach <input type="text" class="chat__input" id="inputSearch"></label>
+            <button type="submit" class="chat__button" id="buttonSearch">Szukaj</button>
+        </div>        
+        <h1 class="chat__title">Hello Chat</h1>
+        <form class="chat__form" id="formChat">
+            <div class="chat__button-container">
+                <label>Autor:<input type="text" class="chat__input" id="inputAuthor"></label>
+                <label>Wiadomość<input type="text" class="chat__input" id="inputMessage"></label>
+                <button type="submit" class="chat__button" id="buttonSend">Wyślij</button>
+            </div>
+            <ul class="chat__slide-list" id="listMessages">
+                <li> Autor: Wiadomość </li>
+            </ul>    
+        </form>
+    </div>
+    <script src="./js/chat.js" type="module"></script>
+</body>
+</html>
